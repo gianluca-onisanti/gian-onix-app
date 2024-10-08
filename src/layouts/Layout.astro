@@ -52,10 +52,27 @@ const { title } = Astro.props;
 		font-family: "nunito";
 		src: url("/fonts/nunito/Nunito-Regular.ttf") format("truetype");
 	}
+
 	@font-face {
 		font-family: "nunito-bold";
 		src: url("/fonts/nunito/Nunito-Bold.ttf") format("truetype");
 	}
+
+	@font-face {
+		font-family: "josefin";
+		src: url("/fonts/josefin/JosefinSans-Regular.ttf") format("truetype");
+	}
+
+	@font-face {
+		font-family: "josefin-bold";
+		src: url("/fonts/josefin/JosefinSans-Bold.ttf") format("truetype");
+	}
+
+	@font-face {
+		font-family: "josefin-med";
+		src: url("/fonts/josefin/JosefinSans-Medium.ttf") format("truetype");
+	}
+
 	html {
 		font-family: system-ui, sans-serif;
 		background: #f1f5ff;
@@ -97,7 +114,7 @@ const { title } = Astro.props;
 
 	main {
 		font-family: 'nunito';
-		margin: 80px auto;
+		margin: auto;
 		padding: 3rem;
 		width: 1080px;
 		max-width: calc(100% - 2rem);
@@ -134,6 +151,31 @@ const { title } = Astro.props;
 		margin-top: 0.5rem;
 		margin-bottom: 0;
 	}
+
+	.topic-container-name {
+		display: flex;
+		justify-content: start;
+		align-items: center;
+	}
+
+	.topic {
+		font-family: 'josefin';
+		background-image: linear-gradient(
+			to left,
+			rgb(255, 166, 0),
+			rgb(86, 0, 172)
+		);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+
+	.text {
+		width: 800px;
+		font-size: 20px;
+		font-family: 'josefin';
+		margin-left: 10px;
+	}
+
 	.header-container {
 		position: fixed; /* Stays in place when scrolling */
 		top: 0; /* Positioned at the top */
@@ -185,10 +227,6 @@ const { title } = Astro.props;
 		padding: 5px;
 		margin-right: 20px;
 		overflow: hidden; /* Para esconder o conteúdo da pseudo-classe */
-	}
-
-	.selected {
-  		color: lightgray !important; /* Ou outro estilo para indicar seleção */
 	}
 
 	.header ul li::before {

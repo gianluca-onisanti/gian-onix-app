@@ -9,49 +9,6 @@ interface Props {
 const { isOpen = false, links = [] } = Astro.props;
 ---
 
-<script>
-    document.addEventListener("DOMContentLoaded", () => {
-        // Função de debounce para otimizar o desempenho
-        const debounce = (func: any, wait : any) : any => {
-            let timeout : any;
-            return (...args : any) => {
-                clearTimeout(timeout);
-                timeout = setTimeout(() => func.apply(this, args), wait);
-            };
-        };
-
-        const onScroll = () => {
-            const sections = document.querySelectorAll("section[id]"); // Seleciona todas as seções com ID
-
-            let currentSectionId = "";
-            sections.forEach((section) => {
-                const rect = section.getBoundingClientRect();
-                console.log("Section ID:", section.id, "Top:", rect.top, "Bottom:", rect.bottom);
-                if (rect.top <= 100 && rect.bottom >= 100) {
-                    currentSectionId = section.id;
-                }
-            });
-
-            const menuItems = document.querySelectorAll(".header ul li");
-            menuItems.forEach((item) => {
-                const link = item.querySelector("a");
-                if (link) {
-                    const href = link.getAttribute("href");
-                    console.log("Link Href:", href, "Current Section ID:", currentSectionId);
-                    if (href === `#${currentSectionId}`) {
-                        link.classList.add("selected");
-                    } else {
-                        link.classList.remove("selected");
-                    }
-                }
-            });
-        };
-
-        window.addEventListener("scroll", debounce(onScroll, 100)); // Adicione debounce para otimizar a função
-        onScroll(); // Chame onScroll para definir o estado inicial
-    });
-</script>
-
 <div class="header-container">
     <div class="header-box">
         <nav class="header">
