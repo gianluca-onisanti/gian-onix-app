@@ -1,31 +1,74 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Sphere from '../components/Sphere.astro'
+import Layout from "../layouts/Layout.astro";
+import Sphere from "../components/Sphere.astro";
 ---
 
-<Layout title="Gianluca Onisanti">
+<Layout title="Gianluca S. Onisanti">
 	<main>
-		<div id="1"/>
-		<div style="margin-top: 120px; height: 2000px;">
+		<div id="1"></div>
+		<div style="margin-top: 40px; height: 700px;">
 			<div class="topic-container-name">
-				<h1 class="topic">Gianluca S. Onisanti</h2>
+				<h1 class="topic">Gianluca S. Onisanti</h1>
 				<div style="padding: 30px">
-					<Sphere imageSrc="/images/landscape.jpg" />
+					<Sphere imageSrc="/images/self.jpg" />
 				</div>
 			</div>
 			<div class="text">
-				Esse é meu nome, porém você pode simplesmente me chamar de Gian. Tenho muito apreço pelo que faço,
-				sendo um Programador Full Stack com umas palhinhas aqui e alí em design e criação de jogos.
-				Adoro permear entre os mundos de Dados, API's e Interfaces Visuais.
+				Esse é meu nome, porém você pode simplesmente me chamar de Gian. <br
+				/>
+				Nascido e criado em Curitiba, cresci apaixonado por inovações tecnologias
+				e entretenimento digital, o que foi um grande motivador para seguir
+				uma carreira de desenvolvedor de software.<br />
+				Todavia eu também já tive meu pezinho em Design, e trabalhei por
+				alguns anos, ainda na adolescência, como <span class="italic"
+					>designer freelancer</span
+				>, criando diversas Identidades Visuais e Produtos no período,
+				atendendendo principalmente para público estrangeiro.
 				<br />
 				<br />
-				Muito pouco espaço para muito a se ver! Venha me conhecer um pouco mais abaixo.
-				<br />
-				<br />
-				<a href="https://linkedin.com/in/gianluca-onisanti">Oi</a>
+				<!-- <a href="https://linkedin.com/in/gianluca-onisanti">Oi</a> -->
 			</div>
 		</div>
 
-		<div id="2">oi </div>
+		<div style="margin-top: 40px; height: 700px;">
+			<div class="topic-container-name">
+				<h1 class="topic">Formação Acadêmica</h1>
+			</div>
+
+			<div style="margin-left: 125px;">
+
+				<div class="jump"></div>
+				<div style="display: flex; align-items: center;">
+					<Sphere imageSrc="/images/pucpr.png" />
+					<div style="margin-left: 50px;">
+						<h2>Tecnologia em Análise e Desenvolvimento de Sistemas</h2>
+						<span class="italic"
+							>Pontifícia Universidade Católica do Paraná (PUCPR)</span
+						><br />
+						<p>
+							Início em Setembro de 2021 | Término em Outubro de 2024
+						</p>
+						<br />
+					</div>
+				</div>
+	
+				<div id="2"></div>
+	
+				<div style="display: flex; align-items: center; margin-top: 100px; margin-left: 85px">
+					<div style="margin-right: 50px;">
+						<h2>Técnico Intregrado em Programação de Jogos Digitais</h2>
+						<span class="italic"
+							>Instituto Federal do Paraná (IFPR)</span
+						><br />
+						<p>
+							Início em Fevereiro de 2017 | Término em Dezembro de 2020
+						</p>
+						<br />
+					</div>
+					<Sphere imageSrc="/images/ifpr.jpg" />
+				</div>
+
+			</div>
+		</div>
 	</main>
 </Layout>
