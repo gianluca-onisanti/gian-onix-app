@@ -28,18 +28,22 @@ const { title } = Astro.props;
 				},
 				{
 					href: "#2",
-					label: "Formação",
+					label: "Formação Acadêmica",
 				},
 				{
 					href: "#3",
-					label: "Experiência",
+					label: "Conhecimentos",
 				},
 				{
 					href: "#4",
-					label: "Projetos",
+					label: "Experiência Profissionais",
 				},
 				{
 					href: "#5",
+					label: "Projetos",
+				},
+				{
+					href: "#6",
 					label: "Contato",
 				},
 			]}
@@ -61,6 +65,34 @@ const { title } = Astro.props;
 	@font-face {
 		font-family: "nunito";
 		src: url("/fonts/nunito/Nunito-Medium.ttf") format("truetype");
+	}
+
+	@media (max-width: 1280px) {
+		.canvas {
+			margin-top: 60px;
+			height: 720px;
+		}
+	}
+
+	@media (min-width: 1366px) {
+		.canvas {
+			margin-top: 80px;
+			height: 720px;
+		}
+	}
+
+	@media (min-width: 1440px) {
+		.canvas {
+			margin-top: 100px;
+			height: 720px;
+		}
+	}
+
+	@media (min-width: 1920px) {
+		.canvas {
+			margin-top: 100px;
+			height: 1080px;
+		}
 	}
 
 	html {
@@ -160,6 +192,11 @@ const { title } = Astro.props;
 		align-items: center;
 	}
 
+	.topic-container-name h2 {
+		margin-top: 60px;
+		position: absolute;
+	}
+
 	.topic {
 		font-family: 'nunito';
 		background-image: linear-gradient(
@@ -254,6 +291,7 @@ const { title } = Astro.props;
 	}
 
 	.header ul li a {
+		font-size: 14px;
 		position: relative; /* Faz com que o link tenha um nível de `z-index` acima do pseudo-elemento */
 		z-index: 1; /* Garante que o link esteja acima do pseudo-elemento */
 		display: inline-block;
@@ -266,4 +304,10 @@ const { title } = Astro.props;
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 	}
+
+	.knowledges-list {
+		display: flex;
+		gap: 30px;
+	}
+
 </style>
