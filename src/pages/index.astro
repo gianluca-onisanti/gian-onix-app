@@ -40,12 +40,12 @@ import Sphere from "../components/Sphere.astro";
 				<h1 class="topic">Formação Acadêmica</h1>
 			</div>
 
-			<div style="margin-left: 125px;">
+			<div class="super">
 
 				<div class="jump"></div>
 				<div style="display: flex; align-items: center;">
 					<Sphere size="150px" tooltip='PUCPR' imageSrc="/images/pucpr.png" />
-					<div style="margin-left: 50px;">
+					<div class="sphere-text">
 						<h2>Tecnologia em Análise e Desenvolvimento de Sistemas</h2>
 						<span class="italic"
 							>Pontifícia Universidade Católica do Paraná (PUCPR)</span
@@ -58,7 +58,7 @@ import Sphere from "../components/Sphere.astro";
 				</div>
 	
 				<div style="display: flex; align-items: center; margin-top: 75px; margin-left: 110px">
-					<div style="margin-right: 50px;">
+					<div class="sphere-text">
 						<h2>Técnico Intregrado em Programação de Jogos Digitais</h2>
 						<span class="italic"
 							>Instituto Federal do Paraná (IFPR)</span
@@ -80,7 +80,7 @@ import Sphere from "../components/Sphere.astro";
 				<h1 class="topic">Conhecimentos</h1>
 			</div>
 
-			<div style="margin-left: 24%; justify-content: center;">
+			<div class="sphere-kit">
 
 				<div class="jump"></div>
 				<div class="knowledges-list">
@@ -122,14 +122,14 @@ import Sphere from "../components/Sphere.astro";
 				<h1 class="topic">Experiências Profissionais</h1>
 			</div>
 
-			<div style="margin-left: 125px;">
+			<div class="super">
 
 				<div class="jump"></div>
 				<div style="display: flex;">
 					<a href='https://www.cassol.ind.br'>
 						<Sphere size="150px" tooltip='Cassol' imageSrc="/images/cassol.png" />
 					</a>
-					<div style="margin-left: 50px;">
+					<div class="sphere-text">
 						<h2>Estagiário Desenvolvedor Full Stack</h2>
 						<span class="italic">Cassol Pré-Fabricados Ltda.</span
 						><br />
@@ -147,8 +147,8 @@ import Sphere from "../components/Sphere.astro";
 					</div>
 				</div>
 	
-				<div style="display: flex; margin-top: 150px; margin-left: 185px">
-					<div style="margin-right: 50px; text-align: end;">
+				<div class="left-hand">
+					<div class='sphere-text-left'>
 						<h2>Desenvolvedor Front-end Trainee</h2>
 						<span class="italic">Vds Sistemas de Informacao Ltda.</span
 						><br />
@@ -173,7 +173,7 @@ import Sphere from "../components/Sphere.astro";
 					<a href='https://sascar.com.br'>
 						<Sphere size="150px" tooltip='Sascar' imageSrc="/images/sascar.jpg" />
 					</a>
-					<div style="margin-left: 50px;">
+					<div class="sphere-text">
 						<h2>Estagiário de TI</h2>
 						<span class="italic">Sascar Tecnologia e Segurança Automotiva S.A. </span
 						><br />
@@ -203,7 +203,9 @@ import Sphere from "../components/Sphere.astro";
 
 			<div style="text-align: center;">
 				<span class='italic'>
-					... Em breve ...
+					<span class="mobile-shut">
+						... Em breve ...
+					</span>
 				</span>
 			</div>
 		

@@ -67,6 +67,51 @@ const { title } = Astro.props;
 		src: url("/fonts/nunito/Nunito-Medium.ttf") format("truetype");
 	}
 
+	@media (max-width: 500px) {
+		.topic-container-name {
+			width: 1000px;
+			margin-left: 00px;
+		}
+
+		.topic-container-name h2 {
+			width: 300px !important;
+			margin-top: 80px !important;
+			position: absolute;
+		}
+
+		.text {
+			margin-left: 80px !important;
+			text-align: center !important;
+		}
+
+		.sphere-text h2 {
+			width: 400px !important;
+		}
+
+		.sphere-text-left h2 {
+			width: 400px !important;
+		}
+
+		.super {
+			margin-left: 150px !important;
+		}
+
+		.sphere-kit {
+			margin-left: 215px !important;
+		}
+
+		.left-hand {
+			margin-left: 85px !important;
+		}
+
+		.mobile-shut {
+			position: absolute;
+			width: 300px !important;
+			margin-left: 160px !important;
+		}
+
+	}
+
 	@media (max-width: 1280px) {
 		.canvas {
 			margin-top: 60px;
@@ -96,7 +141,7 @@ const { title } = Astro.props;
 	}
 
 	html {
-		font-family: 'nunito';
+		font-family: "nunito";
 		background: #f1f5ff;
 		scroll-behavior: smooth;
 	}
@@ -104,7 +149,7 @@ const { title } = Astro.props;
 	.bold {
 		font-weight: bold;
 	}
-	
+
 	.italic {
 		font-style: italic;
 	}
@@ -122,7 +167,11 @@ const { title } = Astro.props;
 	}
 
 	::-webkit-scrollbar-thumb {
-		background: linear-gradient(to bottom, rgb(255, 166, 0), rgb(86, 0, 172));
+		background: linear-gradient(
+			to bottom,
+			rgb(255, 166, 0),
+			rgb(86, 0, 172)
+		);
 		border-radius: 4px; /* Add rounded corners */
 	}
 
@@ -147,7 +196,7 @@ const { title } = Astro.props;
 	}
 
 	main {
-		font-family: 'nunito';
+		font-family: "nunito";
 		margin: auto;
 		padding: 3rem;
 		width: 1080px;
@@ -198,7 +247,7 @@ const { title } = Astro.props;
 	}
 
 	.topic {
-		font-family: 'nunito';
+		font-family: "nunito";
 		background-image: linear-gradient(
 			to left,
 			rgb(255, 166, 0),
@@ -213,7 +262,7 @@ const { title } = Astro.props;
 		color: rgb(11, 3, 20);
 		width: 800px;
 		font-size: 16px;
-		font-family: 'nunito';
+		font-family: "nunito";
 		margin-left: 125px;
 	}
 
@@ -225,8 +274,9 @@ const { title } = Astro.props;
 		height: 120px; /* 100px height */
 		background-image: linear-gradient(
 			to bottom,
-			rgba(241, 245, 255, 1), /* Fully opaque at top */
-			rgba(241, 245, 255, 0) /* Fully transparent at bottom */
+			rgba(241, 245, 255, 1),
+			/* Fully opaque at top */ rgba(241, 245, 255, 0)
+				/* Fully transparent at bottom */
 		);
 		z-index: 1; /* Ensure it's above other content */
 	}
@@ -239,8 +289,9 @@ const { title } = Astro.props;
 		height: 200px; /* 100px height */
 		background-image: linear-gradient(
 			to bottom,
-			rgba(241, 245, 255, 1), /* Fully opaque at top */
-			rgba(241, 245, 255, 0) /* Fully transparent at bottom */
+			rgba(241, 245, 255, 1),
+			/* Fully opaque at top */ rgba(241, 245, 255, 0)
+				/* Fully transparent at bottom */
 		);
 		z-index: 1; /* Ensure it's above other content */
 	}
@@ -308,6 +359,30 @@ const { title } = Astro.props;
 	.knowledges-list {
 		display: flex;
 		gap: 30px;
+	}
+
+	.sphere-text {
+		margin-left: 50px;
+	}
+
+	.sphere-text-left {
+		margin-right: 50px;
+		text-align: end;
+	}
+
+	.super {
+		margin-left: 125px;
+	}
+
+	.sphere-kit {
+		margin-left: 24%; 
+		justify-content: center;
+	}
+
+	.left-hand {
+		display: flex; 
+		margin-top: 150px; 
+		margin-left: 185px;
 	}
 
 </style>
