@@ -2,7 +2,7 @@
 import Menu from "../components/Menu.astro";
 
 interface Props {
-	title: string;
+  title: string;
 }
 
 const { title } = Astro.props;
@@ -10,385 +10,379 @@ const { title } = Astro.props;
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/onisanti.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<body>
-		<Menu
-			isOpen={true}
-			links={[
-				{
-					href: "#1",
-					label: "Sobre Mim",
-				},
-				{
-					href: "#2",
-					label: "Formação Acadêmica",
-				},
-				{
-					href: "#3",
-					label: "Conhecimentos",
-				},
-				{
-					href: "#4",
-					label: "Experiências Profissionais",
-				},
-				{
-					href: "#5",
-					label: "Projetos",
-				},
-				{
-					href: "#6",
-					label: "Contato",
-				},
-			]}
-		/>
-		<slot />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/onisanti.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <Menu
+      isOpen={true}
+      links={[
+        {
+          href: "#1",
+          label: "Sobre Mim",
+        },
+        {
+          href: "#2",
+          label: "Formação Acadêmica",
+        },
+        {
+          href: "#3",
+          label: "Conhecimentos",
+        },
+        {
+          href: "#4",
+          label: "Experiências Profissionais",
+        },
+        {
+          href: "#5",
+          label: "Projetos",
+        },
+        {
+          href: "#6",
+          label: "Contato",
+        },
+      ]}
+    />
+    <slot />
+  </body>
 </html>
 <style is:global>
-	@font-face {
-		font-family: "nunito";
-		src: url("/fonts/nunito/Nunito-Regular.ttf") format("truetype");
-	}
+  @font-face {
+    font-family: "nunito";
+    src: url("/fonts/nunito/Nunito-Regular.ttf") format("truetype");
+  }
 
-	@font-face {
-		font-family: "nunito-bold";
-		src: url("/fonts/nunito/Nunito-Bold.ttf") format("truetype");
-	}
+  @font-face {
+    font-family: "nunito-bold";
+    src: url("/fonts/nunito/Nunito-Bold.ttf") format("truetype");
+  }
 
-	@font-face {
-		font-family: "nunito";
-		src: url("/fonts/nunito/Nunito-Medium.ttf") format("truetype");
-	}
+  @font-face {
+    font-family: "nunito";
+    src: url("/fonts/nunito/Nunito-Medium.ttf") format("truetype");
+  }
 
-	@media (max-width: 500px) {
-		.topic-container-name {
-			width: 1000px;
-			margin-left: 00px;
-		}
+  @media (max-width: 500px) {
+    .topic-container-name {
+      width: 1000px;
+      margin-left: 00px;
+    }
 
-		.topic-container-name h2 {
-			width: 300px !important;
-			margin-top: 80px !important;
-			position: absolute;
-		}
+    .topic-container-name h2 {
+      width: 300px !important;
+      margin-top: 80px !important;
+      position: absolute;
+    }
 
-		.text {
-			margin-left: 80px !important;
-			text-align: center !important;
-		}
+    .text {
+      margin-left: 80px !important;
+      text-align: center !important;
+    }
 
-		.sphere-text h2 {
-			width: 400px !important;
-		}
+    .sphere-text h2 {
+      width: 400px !important;
+    }
 
-		.sphere-text-left h2 {
-			width: 400px !important;
-		}
+    .sphere-text-left h2 {
+      width: 400px !important;
+    }
 
-		.super {
-			margin-left: 150px !important;
-		}
+    .super {
+      margin-left: 150px !important;
+    }
 
-		.sphere-kit {
-			margin-left: 215px !important;
-		}
+    .sphere-kit {
+      margin-left: 215px !important;
+    }
 
-		.left-hand {
-			margin-left: 85px !important;
-		}
+    .left-hand {
+      margin-left: 85px !important;
+    }
 
-		.mobile-shut {
-			position: absolute;
-			width: 300px !important;
-			margin-left: 160px !important;
-		}
+    .mobile-shut {
+      position: absolute;
+      width: 300px !important;
+      margin-left: 160px !important;
+    }
+  }
 
-	}
+  @media (max-width: 1280px) {
+    .canvas {
+      margin-top: 60px;
+      height: 720px;
+    }
+  }
 
-	@media (max-width: 1280px) {
-		.canvas {
-			margin-top: 60px;
-			height: 720px;
-		}
-	}
+  @media (min-width: 1366px) {
+    .canvas {
+      margin-top: 80px;
+      height: 720px;
+    }
+  }
 
-	@media (min-width: 1366px) {
-		.canvas {
-			margin-top: 80px;
-			height: 720px;
-		}
-	}
+  @media (min-width: 1440px) {
+    .canvas {
+      margin-top: 100px;
+      height: 720px;
+    }
+  }
 
-	@media (min-width: 1440px) {
-		.canvas {
-			margin-top: 100px;
-			height: 720px;
-		}
-	}
+  @media (min-width: 1920px) {
+    .canvas {
+      margin-top: 100px;
+      height: 1080px;
+    }
+  }
 
-	@media (min-width: 1920px) {
-		.canvas {
-			margin-top: 100px;
-			height: 1080px;
-		}
-	}
+  html {
+    font-family: "nunito";
+    background: #f1f5ff;
+    scroll-behavior: smooth;
+  }
 
-	html {
-		font-family: "nunito";
-		background: #f1f5ff;
-		scroll-behavior: smooth;
-	}
+  .bold {
+    font-weight: bold;
+  }
 
-	.bold {
-		font-weight: bold;
-	}
+  .italic {
+    font-style: italic;
+  }
 
-	.italic {
-		font-style: italic;
-	}
+  ::-webkit-scrollbar {
+    width: 6px; /* Adjust width as needed */
+  }
 
-	::-webkit-scrollbar {
-		width: 6px; /* Adjust width as needed */
-	}
+  ::-webkit-scrollbar-track {
+    background: #f1f5ff; /* Match your background color */
+  }
 
-	::-webkit-scrollbar-track {
-		background: #f1f5ff; /* Match your background color */
-	}
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, rgb(255, 166, 0), rgb(86, 0, 172));
+    border-radius: 4px; /* Add rounded corners */
+  }
 
-	::-webkit-scrollbar-thumb {
-		background: linear-gradient(
-			to bottom,
-			rgb(255, 166, 0),
-			rgb(86, 0, 172)
-		);
-		border-radius: 4px; /* Add rounded corners */
-	}
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(
+      to top,
+      rgba(255, 166, 0, 0.8),
+      rgba(86, 0, 172, 0.8)
+    );
+  }
 
-	::-webkit-scrollbar-thumb:hover {
-		background: linear-gradient(
-			to top,
-			rgba(255, 166, 0, 0.8),
-			rgba(86, 0, 172, 0.8)
-		);
-	}
+  code {
+    font-family:
+      Menlo,
+      Monaco,
+      Lucida Console,
+      Liberation Mono,
+      DejaVu Sans Mono,
+      Bitstream Vera Sans Mono,
+      Courier New,
+      monospace;
+  }
 
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
-	}
+  main {
+    font-family: "nunito";
+    margin: auto;
+    padding: 3rem;
+    width: 1080px;
+    max-width: calc(100% - 2rem);
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    line-height: 1.6;
+  }
 
-	main {
-		font-family: "nunito";
-		margin: auto;
-		padding: 3rem;
-		width: 1080px;
-		max-width: calc(100% - 2rem);
-		color: rgb(0, 0, 0);
-		font-size: 16px;
-		line-height: 1.6;
-	}
+  .astro-a {
+    position: absolute;
+    top: -32px;
+    left: 50%;
+    transform: translatex(-50%);
+    width: 220px;
+    height: auto;
+    z-index: -1;
+  }
 
-	.astro-a {
-		position: absolute;
-		top: -32px;
-		left: 50%;
-		transform: translatex(-50%);
-		width: 220px;
-		height: auto;
-		z-index: -1;
-	}
+  h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 1em;
+  }
 
-	h1 {
-		font-size: 4rem;
-		font-weight: 700;
-		line-height: 1;
-		text-align: center;
-		margin-bottom: 1em;
-	}
+  .space {
+    padding: 0px 20px 0px 20px;
+  }
 
-	.space {
-		padding: 0px 20px 0px 20px;
-	}
+  .subject {
+    margin-top: 150px;
+    margin-bottom: 150px;
+    display: flex;
+    align-items: center;
+  }
 
-	.subject {
-		margin-top: 150px;
-		margin-bottom: 150px;
-		display: flex;
-		align-items: center;
-	}	
+  h2 {
+    margin: 0;
+    font-size: 1.25rem;
+    transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+  }
 
-	h2 {
-		margin: 0;
-		font-size: 1.25rem;
-		transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
-	}
+  p {
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+  }
 
-	p {
-		margin-top: 0.5rem;
-		margin-bottom: 0;
-	}
+  .topic-container-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-	.topic-container-name {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
+  .topic-container-name h2 {
+    margin-top: 60px;
+    position: absolute;
+  }
 
-	.topic-container-name h2 {
-		margin-top: 60px;
-		position: absolute;
-	}
+  .topic {
+    font-family: "nunito";
+    background-image: linear-gradient(
+      to left,
+      rgb(255, 166, 0),
+      rgb(86, 0, 172)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 
-	.topic {
-		font-family: "nunito";
-		background-image: linear-gradient(
-			to left,
-			rgb(255, 166, 0),
-			rgb(86, 0, 172)
-		);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-	}
+  .text {
+    justify-content: center;
+    color: rgb(11, 3, 20);
+    width: 800px;
+    font-size: 16px;
+    font-family: "nunito";
+    margin-left: 125px;
+  }
 
-	.text {
-		justify-content: center;
-		color: rgb(11, 3, 20);
-		width: 800px;
-		font-size: 16px;
-		font-family: "nunito";
-		margin-left: 125px;
-	}
+  .header-container {
+    position: fixed; /* Stays in place when scrolling */
+    top: 0; /* Positioned at the top */
+    left: 0; /* Starts from the left edge */
+    width: 100%; /* Takes the full width */
+    height: 120px; /* 100px height */
+    background-image: linear-gradient(
+      to bottom,
+      rgba(241, 245, 255, 1),
+      /* Fully opaque at top */ rgba(241, 245, 255, 0)
+        /* Fully transparent at bottom */
+    );
+    z-index: 1; /* Ensure it's above other content */
+  }
 
-	.header-container {
-		position: fixed; /* Stays in place when scrolling */
-		top: 0; /* Positioned at the top */
-		left: 0; /* Starts from the left edge */
-		width: 100%; /* Takes the full width */
-		height: 120px; /* 100px height */
-		background-image: linear-gradient(
-			to bottom,
-			rgba(241, 245, 255, 1),
-			/* Fully opaque at top */ rgba(241, 245, 255, 0)
-				/* Fully transparent at bottom */
-		);
-		z-index: 1; /* Ensure it's above other content */
-	}
+  .header-box {
+    position: fixed; /* Stays in place when scrolling */
+    top: 0; /* Positioned at the top */
+    left: 0; /* Starts from the left edge */
+    width: 100%; /* Takes the full width */
+    height: 200px; /* 100px height */
+    background-image: linear-gradient(
+      to bottom,
+      rgba(241, 245, 255, 1),
+      /* Fully opaque at top */ rgba(241, 245, 255, 0)
+        /* Fully transparent at bottom */
+    );
+    z-index: 1; /* Ensure it's above other content */
+  }
 
-	.header-box {
-		position: fixed; /* Stays in place when scrolling */
-		top: 0; /* Positioned at the top */
-		left: 0; /* Starts from the left edge */
-		width: 100%; /* Takes the full width */
-		height: 200px; /* 100px height */
-		background-image: linear-gradient(
-			to bottom,
-			rgba(241, 245, 255, 1),
-			/* Fully opaque at top */ rgba(241, 245, 255, 0)
-				/* Fully transparent at bottom */
-		);
-		z-index: 1; /* Ensure it's above other content */
-	}
+  .header {
+    position: fixed;
+    right: 0;
+    font-family: "nunito-bold";
+    padding: 15px;
+    justify-content: end;
+    display: flex;
+    flex-direction: row;
+  }
 
-	.header {
-		position: fixed;
-		right: 0;
-		font-family: "nunito-bold";
-		padding: 15px;
-		justify-content: end;
-		display: flex;
-		flex-direction: row;
-	}
+  .header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
 
-	.header ul {
-		list-style: none;
-		margin: 0;
-		padding: 0;
-		display: flex;
-	}
+  .header ul li {
+    position: relative;
+    border-radius: 15px;
+    padding: 5px;
+    margin-right: 20px;
+    overflow: hidden; /* Para esconder o conteúdo da pseudo-classe */
+  }
 
-	.header ul li {
-		position: relative;
-		border-radius: 15px;
-		padding: 5px;
-		margin-right: 20px;
-		overflow: hidden; /* Para esconder o conteúdo da pseudo-classe */
-	}
+  .header ul li::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+      to left,
+      rgba(255, 166, 0, 0.2),
+      rgba(86, 0, 172, 0.2)
+    );
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
 
-	.header ul li::before {
-		content: "";
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		background-image: linear-gradient(
-			to left,
-			rgba(255, 166, 0, 0.2),
-			rgba(86, 0, 172, 0.2)
-		);
-		opacity: 0;
-		transition: opacity 0.3s ease-in-out;
-	}
+  .header ul li:hover::before {
+    opacity: 1;
+  }
 
-	.header ul li:hover::before {
-		opacity: 1;
-	}
+  .header ul li a {
+    font-size: 14px;
+    position: relative; /* Faz com que o link tenha um nível de `z-index` acima do pseudo-elemento */
+    z-index: 1; /* Garante que o link esteja acima do pseudo-elemento */
+    display: inline-block;
+    text-decoration: none;
+    background-image: linear-gradient(
+      to left,
+      rgb(255, 166, 0),
+      rgb(86, 0, 172)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 
-	.header ul li a {
-		font-size: 14px;
-		position: relative; /* Faz com que o link tenha um nível de `z-index` acima do pseudo-elemento */
-		z-index: 1; /* Garante que o link esteja acima do pseudo-elemento */
-		display: inline-block;
-		text-decoration: none;
-		background-image: linear-gradient(
-			to left,
-			rgb(255, 166, 0),
-			rgb(86, 0, 172)
-		);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-	}
+  .knowledges-list {
+    display: flex;
+    gap: 30px;
+  }
 
-	.knowledges-list {
-		display: flex;
-		gap: 30px;
-	}
+  .sphere-text {
+    margin-left: 50px;
+  }
 
-	.sphere-text {
-		margin-left: 50px;
-	}
+  .sphere-text-left {
+    margin-right: 50px;
+    text-align: end;
+  }
 
-	.sphere-text-left {
-		margin-right: 50px;
-		text-align: end;
-	}
+  .super {
+    margin-left: 125px;
+  }
 
-	.super {
-		margin-left: 125px;
-	}
+  .sphere-kit {
+    margin-left: 24%;
+    justify-content: center;
+  }
 
-	.sphere-kit {
-		margin-left: 24%; 
-		justify-content: center;
-	}
-
-	.left-hand {
-		display: flex;
-		margin-left: 185px;
-	}
-
+  .left-hand {
+    display: flex;
+    margin-left: 185px;
+  }
 </style>
