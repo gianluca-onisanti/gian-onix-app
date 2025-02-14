@@ -4,355 +4,402 @@ import Sphere from "../components/Sphere.astro";
 ---
 
 <Layout title="Gianluca S. Onisanti">
-  <main>
-    <div id="1"></div>
-    <div class="canvas">
-      <div class="topic-container-name">
-        <h1 class="topic">Gianluca S. Onisanti</h1>
-        <h2 class="topic">— Desenvolvedor Full Stack —</h2>
-        <div style="padding: 30px">
-          <a href="https://www.linkedin.com/in/gianluca-onisanti/">
-            <Sphere
-              size="200px"
-              tooltip="Este sou eu!"
-              imageSrc="/images/self.jpg"
-            />
-          </a>
-        </div>
-      </div>
-      <div class="text">
-        Este é meu nome, porém você pode me chamar apenas de Gian. Sou
-        Curitibano, tenho 22 anos e sou recém-formado em Análise e
-        Desenvolvimento de Sistemas pela PUCPR. Sou apaixonado desde pequeno por
-        inovações tecnológicas e entretenimento digital, o que foi a força
-        motriz por trás de minha escolha em seguir no ramo de tecnologia e
-        desenvolvimento de softwares, websites e... jogos, sejam digitais ou de
-        tabuleiro!<br />
-        Ademais também tenho um pé em Design Gráfico e de Interfaces e trabalhei
-        como <span class="italic">designer freelancer</span> durante minha adolescência.
-        Neste período criei identidades visuais inteiras, mascotes, banners e vídeos
-        editados no período, atendendo principalmente o público estrangeiro.
-        <br />
-        <br />
-        Que tal darmos uma passeada aqui pelo site?
-        <span class="topic"><a href="#2" class="bold">Vamos começar!</a></span>
-      </div>
-    </div>
-
-    <div id="2"></div>
-    <div class="canvas">
-      <div class="topic-container-name">
-        <h1 class="topic">Formação Acadêmica</h1>
-      </div>
-
-      <div class="super">
-        <div style="display: flex; align-items: center;">
-          <Sphere size="150px" tooltip="PUCPR" imageSrc="/images/pucpr.png" />
-          <div class="sphere-text">
-            <h2>Tecnologia em Análise e Desenvolvimento de Sistemas</h2>
-            <span class="italic"
-              >Pontifícia Universidade Católica do Paraná (PUCPR)
-            </span><br />
-            <p>Setembro de 2021 - Outubro de 2024</p>
-            <br />
-          </div>
-        </div>
-
-        <div
-          style="display: flex; align-items: center; margin-top: 75px; margin-left: 110px"
-        >
-          <div class="sphere-text-left">
-            <h2>Técnico Intregrado em Programação de Jogos Digitais</h2>
-            <span class="italic">Instituto Federal do Paraná (IFPR)</span><br />
-            <p>Fevereiro de 2017 - Dezembro de 2020</p>
-            <br />
-          </div>
-          <Sphere size="150px" tooltip="IFPR" imageSrc="/images/ifpr.jpg" />
-        </div>
-      </div>
-    </div>
-
-    <div id="3"></div>
-    <div class="canvas">
-      <div class="topic-container-name">
-        <h1 class="topic">Conhecimentos</h1>
-      </div>
-
-      <div class="sphere-kit">
-        <div class="knowledges-list">
-          <a
-            href="https://www.impacta.com.br/blog/typescript-javascript-entenda-que-saiba-diferencas/"
-          >
-            <Sphere
-              size="120px"
-              tooltip="Typescript/Javascript"
-              imageSrc="/images/js-ts.jpg"
-            />
-          </a>
-          <a
-            href="https://www.freecodecamp.org/portuguese/news/por-que-voce-deve-usar-o-react-js-para-o-desenvolvimento-para-a-web/"
-          >
-            <Sphere
-              size="120px"
-              tooltip="React.js"
-              imageSrc="/images/react.png"
-            />
-          </a>
-          <a href="https://blog.rocketseat.com.br/introducao-ao-next-js/">
-            <Sphere
-              size="120px"
-              tooltip="Next.js"
-              imageSrc="/images/next.jpeg"
-            />
-          </a>
-          <a
-            href="https://www.dio.me/articles/python-e-automacao-como-criar-solucoes-rapidas-e-eficazes-para-seu-dia-a-dia"
-          >
-            <Sphere
-              size="120px"
-              tooltip="Python"
-              imageSrc="/images/python.jpg"
-            />
-          </a>
-        </div>
-        <br />
-        <div class="knowledges-list">
-          <a href="https://dotnet.microsoft.com/pt-br/languages/csharp">
-            <Sphere
-              size="120px"
-              tooltip="C#.NET"
-              imageSrc="/images/csharp.jpg"
-            />
-          </a>
-          <a
-            href="https://www.redhat.com/pt-br/topics/containers/what-is-docker"
-          >
-            <Sphere
-              size="120px"
-              tooltip="Docker"
-              imageSrc="/images/docker.jpg"
-            />
-          </a>
-          <a href="https://github.com/gianluca-onisanti">
-            <Sphere
-              size="120px"
-              tooltip="Github"
-              imageSrc="/images/github.jpg"
-            />
-          </a>
-          <a href="https://rockcontent.com/br/blog/como-usar-photoshop/">
-            <Sphere
-              size="120px"
-              tooltip="Photoshop"
-              imageSrc="/images/ps.jpg"
-            />
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <div id="4"></div>
-    <div class="canvas">
-      <div class="topic-container-name">
-        <h1 class="topic">Experiências Profissionais</h1>
-      </div>
-
-      <div class="super">
-        <div class="subject">
-          <a href="https://www.cassol.ind.br">
-            <Sphere
-              size="150px"
-              tooltip="Cassol"
-              imageSrc="/images/cassol.png"
-            />
-          </a>
-          <div class="sphere-text">
-            <h2>Cassol Pré-Fabricados Ltda.</h2>
-            <br />
-            <span class="italic">
-              Analista de Sistemas JR<span class="space">|</span> Jan 2025 — Atualmente
-              <hr />
-              Estagiário de TI<span class="space">|</span> Abr 2024 — Dez 2024
-            </span>
-            <br />
-            <br />
-            <p>
-              <span class="bold">Competências:</span> Typescript, Node.js, Python,
-              Next.JS, Astro.JS,<br />
-              PostgreSQL, Docker, REST APIs, RPA, Webscrapping, Power BI, <br />
-              Photoshop, Zapier, Postman, NextAuth, Data Cleaning.
-            </p>
-          </div>
-        </div>
-
-        <div class="left-hand subject">
-          <div class="sphere-text-left">
-            <h2>Vds Sistemas de Informacao Ltda.</h2>
-            <br />
-            <span class="italic">
-              Desenvolvedor Front-end Trainee<span class="space">|</span> Jul 2023
-              — Out 2023
-            </span>
-            <br />
-            <br />
-            <p>
-              <span class="bold">Competências:</span> Visual Basic, C#, ASP.NET,
-              Javascript, JQuery,<br />
-              SQLServer SQL Queries, MSOffice, Asana, MVC Mobile.<br />
-            </p>
-          </div>
-          <a href="https://vidadesindico.com.br">
-            <Sphere size="150px" tooltip="VDS" imageSrc="/images/vds.jpg" />
-          </a>
-        </div>
-
-        <div class="subject">
-          <a href="https://sascar.com.br">
-            <Sphere
-              size="150px"
-              tooltip="Sascar"
-              imageSrc="/images/sascar.jpg"
-            />
-          </a>
-          <div class="sphere-text">
-            <h2>Sascar Tecnologia e Segurança Automotiva S.A.</h2>
-            <br />
-            <span class="italic">
-              Estagiário de TI<span class="space">|</span> Dez 2021 — Jun 2022
-            </span>
-            <br />
-            <br />
-            <p>
-              <span class="bold">Competências:</span> Java, Spring Boot, Jenkins,
-              Arduino Telemetry, <br />
-              Jira, Agile Management, Scrum.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div id="5" style="margin-top: 950px;"></div>
-    <div class="canvas">
-      <div class="topic-container-name">
-        <h1 class="topic">Projetos</h1>
-      </div>
-
-      <div style="text-align: center;">
-        <span class="italic">
-          <span class="mobile-shut"> ... Em breve ... </span>
-        </span>
-      </div>
-    </div>
-
-    <div id="6"></div>
-    <div class="canvas">
-      <div class="topic-container-name">
-        <h1 class="topic">Contatos & Links</h1>
-      </div>
-
-      <div style="margin-left: 385px;">
-        <div style="display: flex; align-items: center;">
-          <a href="https://www.linkedin.com/in/gianluca-onisanti/">
-            <Sphere
-              size="72px"
-              tooltip="LinkedIn"
-              imageSrc="/images/linkedin.jpg"
-            />
-          </a>
-          <div style="margin-left: 20px;">
-            <h2 style="font-size: 24px;">LinkedIn</h2>
-            <p style="margin-top: -10px;">
-              <span class="topic">
-                <a
-                  href="https://www.linkedin.com/in/gianluca-onisanti/"
-                  class="bold"
+    <main>
+        <div id="1"></div>
+        <div class="canvas">
+            <div class="topic-container-name">
+                <h1 class="topic">Gianluca S. Onisanti</h1>
+                <h2 class="topic">— Desenvolvedor Full Stack —</h2>
+                <div style="padding: 30px">
+                    <a href="https://www.linkedin.com/in/gianluca-onisanti/">
+                        <Sphere
+                            size="200px"
+                            tooltip="Este sou eu!"
+                            imageSrc="/images/self.jpg"
+                        />
+                    </a>
+                </div>
+            </div>
+            <div class="text">
+                Este é meu nome, porém você pode me chamar apenas de Gian. Sou
+                Curitibano, tenho 22 anos e sou recém-formado em Análise e
+                Desenvolvimento de Sistemas pela PUCPR. Sou apaixonado desde
+                pequeno por inovações tecnológicas e entretenimento digital, o
+                que foi a força motriz por trás de minha escolha em seguir no
+                ramo de tecnologia e desenvolvimento de softwares, websites e...
+                jogos, sejam digitais ou de tabuleiro!<br />
+                Ademais também tenho um pé em Design Gráfico e de Interfaces e trabalhei
+                como <span class="italic">designer freelancer</span> durante minha
+                adolescência. Neste período criei identidades visuais inteiras, mascotes,
+                banners e vídeos editados no período, atendendo principalmente o
+                público estrangeiro.
+                <br />
+                <br />
+                Que tal darmos uma passeada aqui pelo site?
+                <span class="topic"
+                    ><a href="#2" class="bold">Vamos começar!</a></span
                 >
-                  Clique para visitar
-                </a>
-              </span>
-            </p>
-          </div>
+            </div>
         </div>
 
-        <div style="display: flex; align-items: center; margin-top: 30px;">
-          <a href="https://wa.me/5541988387580">
-            <Sphere
-              size="72px"
-              tooltip="WhatsApp"
-              imageSrc="/images/whatsapp.jpg"
-            />
-          </a>
-          <div style="margin-left: 20px;">
-            <h2 style="font-size: 24px;">WhatsApp</h2>
-            <p style="margin-top: -10px;">
-              <span class="topic">
-                <a href="https://wa.me/5541988387580" class="bold">
-                  Clique para iniciar conversa
-                </a>
-              </span>
-            </p>
-          </div>
+        <div id="2"></div>
+        <div class="canvas">
+            <div class="topic-container-name">
+                <h1 class="topic">Formação Acadêmica</h1>
+            </div>
+
+            <div class="super">
+                <div style="display: flex; align-items: center;">
+                    <Sphere
+                        size="150px"
+                        tooltip="PUCPR"
+                        imageSrc="/images/pucpr.png"
+                    />
+                    <div class="sphere-text">
+                        <h2>
+                            Tecnologia em Análise e Desenvolvimento de Sistemas
+                        </h2>
+                        <span class="italic"
+                            >Pontifícia Universidade Católica do Paraná (PUCPR)
+                        </span><br />
+                        <p>Setembro de 2021 - Outubro de 2024</p>
+                        <br />
+                    </div>
+                </div>
+
+                <div
+                    style="display: flex; align-items: center; margin-top: 75px; margin-left: 110px"
+                >
+                    <div class="sphere-text-left">
+                        <h2>
+                            Técnico Intregrado em Programação de Jogos Digitais
+                        </h2>
+                        <span class="italic"
+                            >Instituto Federal do Paraná (IFPR)</span
+                        ><br />
+                        <p>Fevereiro de 2017 - Dezembro de 2020</p>
+                        <br />
+                    </div>
+                    <Sphere
+                        size="150px"
+                        tooltip="IFPR"
+                        imageSrc="/images/ifpr.jpg"
+                    />
+                </div>
+            </div>
         </div>
 
-        <div style="display: flex; align-items: center; margin-top: 30px;">
-          <a href="https://github.com/gianluca-onisanti">
-            <Sphere
-              size="72px"
-              tooltip="GitHub"
-              imageSrc="/images/github.jpg"
-            />
-          </a>
-          <div style="margin-left: 20px;">
-            <h2 style="font-size: 24px;">GitHub (Portfólio Dev)</h2>
-            <p style="margin-top: -10px;">
-              <span class="topic">
-                <a href="https://github.com/gianluca-onisanti" class="bold">
-                  Clique para acessar
-                </a>
-              </span>
-            </p>
-          </div>
+        <div id="3"></div>
+        <div class="canvas">
+            <div class="topic-container-name">
+                <h1 class="topic">Conhecimentos</h1>
+            </div>
+
+            <div class="sphere-kit">
+                <div class="knowledges-list">
+                    <a
+                        href="https://www.impacta.com.br/blog/typescript-javascript-entenda-que-saiba-diferencas/"
+                    >
+                        <Sphere
+                            size="120px"
+                            tooltip="Typescript/Javascript"
+                            imageSrc="/images/js-ts.jpg"
+                        />
+                    </a>
+                    <a
+                        href="https://www.freecodecamp.org/portuguese/news/por-que-voce-deve-usar-o-react-js-para-o-desenvolvimento-para-a-web/"
+                    >
+                        <Sphere
+                            size="120px"
+                            tooltip="React.js"
+                            imageSrc="/images/react.png"
+                        />
+                    </a>
+                    <a
+                        href="https://blog.rocketseat.com.br/introducao-ao-next-js/"
+                    >
+                        <Sphere
+                            size="120px"
+                            tooltip="Next.js"
+                            imageSrc="/images/next.jpeg"
+                        />
+                    </a>
+                    <a
+                        href="https://www.dio.me/articles/python-e-automacao-como-criar-solucoes-rapidas-e-eficazes-para-seu-dia-a-dia"
+                    >
+                        <Sphere
+                            size="120px"
+                            tooltip="Python"
+                            imageSrc="/images/python.jpg"
+                        />
+                    </a>
+                </div>
+                <br />
+                <div class="knowledges-list">
+                    <a
+                        href="https://dotnet.microsoft.com/pt-br/languages/csharp"
+                    >
+                        <Sphere
+                            size="120px"
+                            tooltip="C#.NET"
+                            imageSrc="/images/csharp.jpg"
+                        />
+                    </a>
+                    <a
+                        href="https://www.redhat.com/pt-br/topics/containers/what-is-docker"
+                    >
+                        <Sphere
+                            size="120px"
+                            tooltip="Docker"
+                            imageSrc="/images/docker.jpg"
+                        />
+                    </a>
+                    <a href="https://github.com/gianluca-onisanti">
+                        <Sphere
+                            size="120px"
+                            tooltip="Github"
+                            imageSrc="/images/github.jpg"
+                        />
+                    </a>
+                    <a
+                        href="https://rockcontent.com/br/blog/como-usar-photoshop/"
+                    >
+                        <Sphere
+                            size="120px"
+                            tooltip="Photoshop"
+                            imageSrc="/images/ps.jpg"
+                        />
+                    </a>
+                </div>
+            </div>
         </div>
 
-        <div style="display: flex; align-items: center; margin-top: 30px;">
-          <a
-            href="https://www.instagram.com/gian.onisanti/profilecard/?igsh=OGVnb2xnOWpxMXg="
-          >
-            <Sphere
-              size="72px"
-              tooltip="Instagram"
-              imageSrc="/images/insta.jpg"
-            />
-          </a>
-          <div style="margin-left: 20px;">
-            <h2 style="font-size: 24px;">Instagram</h2>
-            <p style="margin-top: -10px;">
-              <span class="topic">
-                <a
-                  href="https://www.instagram.com/gian.onisanti/profilecard/?igsh=OGVnb2xnOWpxMXg="
-                  class="bold"
-                  >Clique para acessar
-                </a>
-              </span>
-            </p>
-          </div>
+        <div id="4"></div>
+        <div class="canvas">
+            <div class="topic-container-name">
+                <h1 class="topic">Experiências Profissionais</h1>
+            </div>
+
+            <div class="super">
+                <div class="subject">
+                    <a href="https://www.cassol.ind.br">
+                        <Sphere
+                            size="150px"
+                            tooltip="Cassol"
+                            imageSrc="/images/cassol.png"
+                        />
+                    </a>
+                    <div class="sphere-text">
+                        <h2>Cassol Pré-Fabricados Ltda.</h2>
+                        <br />
+                        <span class="italic">
+                            Analista de Sistemas JR<span class="space">|</span> Jan
+                            2025 — Atualmente
+                            <hr />
+                            Estagiário de TI<span class="space">|</span> Abr 2024
+                            — Dez 2024
+                        </span>
+                        <br />
+                        <br />
+                        <p>
+                            <span class="bold">Competências:</span> Typescript, Node.js,
+                            Python, Next.JS, Astro.JS,<br />
+                            PostgreSQL, Docker, REST APIs, RPA, Webscrapping, Power
+                            BI, <br />
+                            Photoshop, Zapier, Postman, NextAuth, Data Cleaning.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="left-hand subject">
+                    <div class="sphere-text-left">
+                        <h2>Vds Sistemas de Informacao Ltda.</h2>
+                        <br />
+                        <span class="italic">
+                            Desenvolvedor Front-end Trainee<span class="space"
+                                >|</span
+                            > Jul 2023 — Out 2023
+                        </span>
+                        <br />
+                        <br />
+                        <p>
+                            <span class="bold">Competências:</span> Visual Basic,
+                            C#, ASP.NET, Javascript, JQuery,<br />
+                            SQLServer SQL Queries, MSOffice, Asana, MVC Mobile.<br
+                            />
+                        </p>
+                    </div>
+                    <a href="https://vidadesindico.com.br">
+                        <Sphere
+                            size="150px"
+                            tooltip="VDS"
+                            imageSrc="/images/vds.jpg"
+                        />
+                    </a>
+                </div>
+
+                <div class="subject">
+                    <a href="https://sascar.com.br">
+                        <Sphere
+                            size="150px"
+                            tooltip="Sascar"
+                            imageSrc="/images/sascar.jpg"
+                        />
+                    </a>
+                    <div class="sphere-text">
+                        <h2>Sascar Tecnologia e Segurança Automotiva S.A.</h2>
+                        <br />
+                        <span class="italic">
+                            Estagiário de TI<span class="space">|</span> Dez 2021
+                            — Jun 2022
+                        </span>
+                        <br />
+                        <br />
+                        <p>
+                            <span class="bold">Competências:</span> Java, Spring
+                            Boot, Jenkins, Arduino Telemetry, <br />
+                            Jira, Agile Management, Scrum.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div style="display: flex; align-items: center; margin-top: 30px;">
-          <Sphere
-            size="72px"
-            tooltip="Telefone Celular"
-            imageSrc="/images/fone.jpg"
-          />
-          <div style="margin-left: 20px;">
-            <h2 style="font-size: 24px;">Telefone Celular</h2>
-            <p style="margin-top: -10px;">
-              <span class="italic">(41) 98838-7580</span>
-            </p>
-          </div>
+        <div id="5" style="margin-top: 950px;"></div>
+        <div class="canvas">
+            <div class="topic-container-name">
+                <h1 class="topic">Projetos</h1>
+            </div>
+
+            <div style="text-align: center;">
+                <span class="italic">
+                    <span class="mobile-shut"> ... Em breve ... </span>
+                </span>
+            </div>
         </div>
-      </div>
-    </div>
-  </main>
+
+        <div id="6"></div>
+        <div class="canvas">
+            <div class="topic-container-name">
+                <h1 class="topic">Contatos & Links</h1>
+            </div>
+
+            <div style="margin-left: 385px;">
+                <div style="display: flex; align-items: center;">
+                    <a href="https://www.linkedin.com/in/gianluca-onisanti/">
+                        <Sphere
+                            size="72px"
+                            tooltip="LinkedIn"
+                            imageSrc="/images/linkedin.jpg"
+                        />
+                    </a>
+                    <div style="margin-left: 20px;">
+                        <h2 style="font-size: 24px;">LinkedIn</h2>
+                        <p style="margin-top: -10px;">
+                            <span class="topic">
+                                <a
+                                    href="https://www.linkedin.com/in/gianluca-onisanti/"
+                                    class="bold"
+                                >
+                                    Clique para visitar
+                                </a>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+
+                <div
+                    style="display: flex; align-items: center; margin-top: 30px;"
+                >
+                    <a href="https://wa.me/5541988387580">
+                        <Sphere
+                            size="72px"
+                            tooltip="WhatsApp"
+                            imageSrc="/images/whatsapp.jpg"
+                        />
+                    </a>
+                    <div style="margin-left: 20px;">
+                        <h2 style="font-size: 24px;">WhatsApp</h2>
+                        <p style="margin-top: -10px;">
+                            <span class="topic">
+                                <a
+                                    href="https://wa.me/5541988387580"
+                                    class="bold"
+                                >
+                                    Clique para iniciar conversa
+                                </a>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+
+                <div
+                    style="display: flex; align-items: center; margin-top: 30px;"
+                >
+                    <a href="https://github.com/gianluca-onisanti">
+                        <Sphere
+                            size="72px"
+                            tooltip="GitHub"
+                            imageSrc="/images/github.jpg"
+                        />
+                    </a>
+                    <div style="margin-left: 20px;">
+                        <h2 style="font-size: 24px;">GitHub (Portfólio Dev)</h2>
+                        <p style="margin-top: -10px;">
+                            <span class="topic">
+                                <a
+                                    href="https://github.com/gianluca-onisanti"
+                                    class="bold"
+                                >
+                                    Clique para acessar
+                                </a>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+
+                <div
+                    style="display: flex; align-items: center; margin-top: 30px;"
+                >
+                    <a
+                        href="https://www.instagram.com/gian.onisanti/profilecard/?igsh=OGVnb2xnOWpxMXg="
+                    >
+                        <Sphere
+                            size="72px"
+                            tooltip="Instagram"
+                            imageSrc="/images/insta.jpg"
+                        />
+                    </a>
+                    <div style="margin-left: 20px;">
+                        <h2 style="font-size: 24px;">Instagram</h2>
+                        <p style="margin-top: -10px;">
+                            <span class="topic">
+                                <a
+                                    href="https://www.instagram.com/gian.onisanti/profilecard/?igsh=OGVnb2xnOWpxMXg="
+                                    class="bold"
+                                    >Clique para acessar
+                                </a>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+
+                <div
+                    style="display: flex; align-items: center; margin-top: 30px;"
+                >
+                    <Sphere
+                        size="72px"
+                        tooltip="Telefone Celular"
+                        imageSrc="/images/fone.jpg"
+                    />
+                    <div style="margin-left: 20px;">
+                        <h2 style="font-size: 24px;">Telefone Celular</h2>
+                        <p style="margin-top: -10px;">
+                            <span class="italic">(41) 98838-7580</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 </Layout>
