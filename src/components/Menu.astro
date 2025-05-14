@@ -6,7 +6,7 @@ interface Props {
     links: { href: string; icon?: string; label: string }[];
 }
 
-const { isOpen = false, links = [] } = Astro.props;
+const { links = [] } = Astro.props;
 ---
 
 <div class="header-container">
